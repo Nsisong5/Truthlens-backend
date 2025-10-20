@@ -2,11 +2,11 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 from typing import Optional, List
-from app.core.claim_extractor import extract_claims
-from app.core.evidence_retriever import search_evidence
-from app.core.verifier_model import verify_claim
-from app.core.scorer import compute_score
-from app.dependencies import get_current_user
+from core.claim_extractor import extract_claims
+from core.evidence_retriever import search_evidence
+from core.verifier_model import verify_claim
+from core.scorer import compute_score
+from auth import get_current_user
 import logging
 
 logger = logging.getLogger(__name__)

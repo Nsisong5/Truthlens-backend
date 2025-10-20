@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
-from routes import users, verify_article
+from routes import users, verification
 
 Base.metadata.create_all(bind=engine)
 
