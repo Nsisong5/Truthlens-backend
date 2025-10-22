@@ -1,7 +1,7 @@
 
 from typing import List, Dict
 import numpy as np
-from app.core.evidence_retriever import get_source_reputation
+from core.evidence_retriever import get_source_reputation
 
 
 def compute_score(verification_results: List[Dict], evidence_list: List[Dict]) -> Dict:
